@@ -3,7 +3,7 @@
   "id": "more-minerals",
   "version": "${version}",
   "name": "More Minerals",
-  "license": "CC0-1.0",
+  "license": "GPL v3",
   "icon": "assets/more-minerals/icon.png",
   "environment": "*",
   "entrypoints": {
