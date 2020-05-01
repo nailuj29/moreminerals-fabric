@@ -1,0 +1,19 @@
+{
+  "item.moreminerals.ruby": "Ruby",
+
+  "item.moreminerals.ruby_pickaxe": "Ruby Pickaxe",
+  "item.moreminerals.ruby_sword": "Ruby Sword",
+  "item.moreminerals.ruby_shovel": "Ruby Shovel",
+  "item.moreminerals.ruby_axe": "Ruby Axe",
+  "item.moreminerals.ruby_hoe": "Ruby Hoe",
+
+  "item.moreminerals.ruby_helmet": "Ruby Helmet",
+  "item.moreminerals.ruby_chestplate": "Ruby Chestplate",
+  "item.moreminerals.ruby_leggings": "Ruby Leggings",
+  "item.moreminerals.ruby_boots": "Ruby Boots",
+
+  "block.moreminerals.ruby_block": "Ruby Block",
+  "block.moreminerals.ruby_ore": "Ruby Ore",
+
+  "itemGroup.moreminerals.itemgroup": "More Minerals"
+}

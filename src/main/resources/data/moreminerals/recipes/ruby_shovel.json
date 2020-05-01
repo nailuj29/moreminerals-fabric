@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "|",
+    "|"
+  ],
+
+  "key": {
+    "#": {
+      "item": "moreminerals:ruby"
+    },
+    "|": {
+      "item": "minecraft:stick"
+    }
+  },
+
+  "result": {
+    "item": "moreminerals:ruby_shovel"
+  }
+}

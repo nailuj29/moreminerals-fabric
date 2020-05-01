@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "more-minerals",
+  "version": "${version}",
+  "name": "More Minerals",
+  "license": "CC0-1.0",
+  "icon": "assets/more-minerals/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.nailuj29gaming.moreminerals.moreminerals.MoreMinerals"
+    ]
+  },
+  "mixins": [
+    "more-minerals.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.8.2+build.194",
+    "fabric": "*",
+    "minecraft": "1.15.2"
+  }
+}

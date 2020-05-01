@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "com.nailuj29gaming.moreminerals.moreminerals.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
