@@ -11,6 +11,8 @@ import net.minecraft.item.Item;
 public class MoreMineralsItems {
     //Items
     public static final Item RUBY = new Item(new Item.Settings().group(MoreMinerals.MORE_MINERALS));
+    public static final Item COPPER_INGOT = new Item(new Item.Settings().group(MoreMinerals.MORE_MINERALS));
+    public static final Item COPPER_NUGGET = new Item(new Item.Settings().group(MoreMinerals.MORE_MINERALS));
 
     //BlockItems
     public static final BlockItem RUBY_BLOCK_ITEM = new BlockItem(MoreMineralsBlocks.RUBY_BLOCK, new Item.Settings().group(MoreMinerals.MORE_MINERALS));

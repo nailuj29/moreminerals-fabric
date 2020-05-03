@@ -3,6 +3,11 @@
   "id": "more-minerals",
   "version": "${version}",
   "name": "More Minerals",
+  "description": "This mod adds more minerals such as rubies, copper, and many more!",
+  "contact": {
+    "sources": "https://github.com/nailuj29gaming/moreminerals-fabric/",
+    "issues": "https://github.com/nailuj29gaming/moreminerals-fabric/issues"
+  },
   "license": "GPL v3",
   "icon": "assets/more-minerals/icon.png",
   "environment": "*",

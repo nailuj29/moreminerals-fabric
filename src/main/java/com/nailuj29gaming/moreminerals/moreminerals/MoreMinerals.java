@@ -31,6 +31,8 @@ public class MoreMinerals implements ModInitializer {
     public void onInitialize() {
         // Standard Items
         Registry.register(Registry.ITEM, new Identifier(MODID, "ruby"), MoreMineralsItems.RUBY);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "copper_ingot"), MoreMineralsItems.COPPER_INGOT);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "copper_nugget"), MoreMineralsItems.COPPER_NUGGET);
 
         // Blocks and corresponding BlockItems
         Registry.register(Registry.BLOCK, new Identifier(MODID, "ruby_block"), MoreMineralsBlocks.RUBY_BLOCK);
