@@ -1,8 +1,8 @@
-package com.nailuj29gaming.moreminerals.moreminerals.items;
+package com.nailuj29gaming.moreminerals.moreminerals.items.tools;
 
-import com.nailuj29gaming.moreminerals.moreminerals.MoreMinerals;
-import net.minecraft.recipe.Ingredient;
+import com.nailuj29gaming.moreminerals.moreminerals.items.MoreMineralsItems;
 import net.minecraft.item.ToolMaterial;
+import net.minecraft.recipe.Ingredient;
 
 // Ruby tools are in between iron and diamond
 public class ToolMaterialRuby implements ToolMaterial {

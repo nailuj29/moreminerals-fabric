@@ -4,6 +4,7 @@ import com.nailuj29gaming.moreminerals.moreminerals.MoreMinerals;
 import com.nailuj29gaming.moreminerals.moreminerals.armor.BaseArmor;
 import com.nailuj29gaming.moreminerals.moreminerals.armor.RubyArmorMaterial;
 import com.nailuj29gaming.moreminerals.moreminerals.blocks.MoreMineralsBlocks;
+import com.nailuj29gaming.moreminerals.moreminerals.items.tools.*;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
