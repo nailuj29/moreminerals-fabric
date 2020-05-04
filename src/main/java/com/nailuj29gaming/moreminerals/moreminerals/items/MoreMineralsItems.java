@@ -28,6 +28,9 @@ public class MoreMineralsItems {
 
     public static final PickaxeBase COPPER_PICKAXE = new PickaxeBase(new ToolMaterialCopper());
     public static final SwordBase COPPER_SWORD = new SwordBase(new ToolMaterialCopper());
+    public static final ShovelBase COPPER_SHOVEL = new ShovelBase(new ToolMaterialCopper());
+    public static final AxeBase COPPER_AXE = new AxeBase(new ToolMaterialCopper());
+    public static final HoeBase COPPER_HOE = new HoeBase(new ToolMaterialCopper());
 
     //Armor
     public static final BaseArmor RUBY_HELMET = new BaseArmor(new RubyArmorMaterial(), EquipmentSlot.HEAD);

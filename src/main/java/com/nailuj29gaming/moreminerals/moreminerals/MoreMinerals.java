@@ -50,6 +50,9 @@ public class MoreMinerals implements ModInitializer {
 
         Registry.register(Registry.ITEM, new Identifier(MODID, "copper_pickaxe"), MoreMineralsItems.COPPER_PICKAXE);
         Registry.register(Registry.ITEM, new Identifier(MODID, "copper_sword"), MoreMineralsItems.COPPER_SWORD);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "copper_shovel"), MoreMineralsItems.COPPER_SHOVEL);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "copper_axe"), MoreMineralsItems.COPPER_AXE);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "copper_hoe"), MoreMineralsItems.COPPER_HOE);
 
         // Armor
         Registry.register(Registry.ITEM, new Identifier(MODID, "ruby_helmet"), MoreMineralsItems.RUBY_HELMET);
