@@ -1,21 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "##",
-    "|#",
-    "| "
+    "#",
+    "|",
+    "|"
   ],
-
   "key": {
     "#": {
-      "item": "moreminerals:ruby"
+      "item": "moreminerals:copper_ingot"
     },
     "|": {
       "item": "minecraft:stick"
     }
   },
-
   "result": {
-    "item": "moreminerals:ruby_axe"
+    "item": "moreminerals:copper_shovel"
   }
 }
