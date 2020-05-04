@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "moreminerals:block/block_of_copper"
+    "all": "moreminerals:block/copper_block"
   }
 }

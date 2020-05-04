@@ -41,8 +41,8 @@ public class MoreMinerals implements ModInitializer {
         Registry.register(Registry.BLOCK, new Identifier(MODID, "ruby_ore"), MoreMineralsBlocks.RUBY_ORE);
         Registry.register(Registry.ITEM, new Identifier(MODID, "ruby_ore"), MoreMineralsItems.RUBY_ORE_ITEM);
 
-        Registry.register(Registry.BLOCK, new Identifier(MODID, "block_of_copper"), MoreMineralsBlocks.BLOCK_OF_COPPER);
-        Registry.register(Registry.ITEM, new Identifier(MODID, "block_of_copper"), MoreMineralsItems.BLOCK_OF_COPPER_ITEM);
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "copper_block"), MoreMineralsBlocks.COPPER_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "copper_block"), MoreMineralsItems.COPPER_BLOCK_ITEM);
 
         // Tools
         Registry.register(Registry.ITEM, new Identifier(MODID, "ruby_pickaxe"), MoreMineralsItems.RUBY_PICKAXE);

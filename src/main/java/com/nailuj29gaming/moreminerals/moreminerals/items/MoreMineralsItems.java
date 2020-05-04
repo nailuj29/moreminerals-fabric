@@ -18,7 +18,7 @@ public class MoreMineralsItems {
     //BlockItems
     public static final BlockItem RUBY_BLOCK_ITEM = new BlockItem(MoreMineralsBlocks.RUBY_BLOCK, new Item.Settings().group(MoreMinerals.MORE_MINERALS));
     public static final BlockItem RUBY_ORE_ITEM = new BlockItem(MoreMineralsBlocks.RUBY_ORE, new Item.Settings().group(MoreMinerals.MORE_MINERALS));
-    public static final BlockItem BLOCK_OF_COPPER_ITEM = new BlockItem(MoreMineralsBlocks.BLOCK_OF_COPPER, new Item.Settings().group(MoreMinerals.MORE_MINERALS));
+    public static final BlockItem COPPER_BLOCK_ITEM = new BlockItem(MoreMineralsBlocks.COPPER_BLOCK, new Item.Settings().group(MoreMinerals.MORE_MINERALS));
 
     //Tools
     public static final PickaxeBase RUBY_PICKAXE = new PickaxeBase(new ToolMaterialRuby());
