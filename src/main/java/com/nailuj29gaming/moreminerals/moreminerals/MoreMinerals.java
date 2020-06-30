@@ -105,6 +105,26 @@ public class MoreMinerals implements ModInitializer {
                             )
                     )
             ); // End Ruby Ore
+
+            biome.addFeature(
+                    GenerationStep.Feature.UNDERGROUND_ORES,
+                    Feature.ORE.configure(
+                            new OreFeatureConfig(
+                                    OreFeatureConfig.Target.NATURAL_STONE,
+                                    MoreMineralsBlocks.COPPER_ORE.getDefaultState(),
+                                    14 // Vein Size
+                            )
+                    ).createDecoratedFeature(
+                            Decorator.COUNT_RANGE.configure(
+                                    new RangeDecoratorConfig(
+                                            20, // Veins per chunk
+                                            0, // Bottom Offset
+                                            0, // Minimum Y level
+                                            63 // Maximum Y level
+                                    )
+                            )
+                    )
+            ); // End Copper Ore
         }
     }
 }
