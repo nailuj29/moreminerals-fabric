@@ -66,6 +66,11 @@ public class MoreMinerals implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier(MODID, "ruby_leggings"), MoreMineralsItems.RUBY_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier(MODID, "ruby_boots"), MoreMineralsItems.RUBY_BOOTS);
 
+        Registry.register(Registry.ITEM, new Identifier(MODID, "copper_helmet"), MoreMineralsItems.COPPER_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "copper_chestplate"), MoreMineralsItems.COPPER_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "copper_leggings"), MoreMineralsItems.COPPER_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "copper_boots"), MoreMineralsItems.COPPER_BOOTS);
+
         // Enchants
 
 

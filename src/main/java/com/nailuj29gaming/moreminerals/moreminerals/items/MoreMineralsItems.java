@@ -2,6 +2,7 @@ package com.nailuj29gaming.moreminerals.moreminerals.items;
 
 import com.nailuj29gaming.moreminerals.moreminerals.MoreMinerals;
 import com.nailuj29gaming.moreminerals.moreminerals.armor.BaseArmor;
+import com.nailuj29gaming.moreminerals.moreminerals.armor.CopperArmorMaterial;
 import com.nailuj29gaming.moreminerals.moreminerals.armor.RubyArmorMaterial;
 import com.nailuj29gaming.moreminerals.moreminerals.blocks.MoreMineralsBlocks;
 import com.nailuj29gaming.moreminerals.moreminerals.items.tools.*;
@@ -39,4 +40,9 @@ public class MoreMineralsItems {
     public static final BaseArmor RUBY_CHESTPLATE = new BaseArmor(new RubyArmorMaterial(), EquipmentSlot.CHEST);
     public static final BaseArmor RUBY_LEGGINGS = new BaseArmor(new RubyArmorMaterial(), EquipmentSlot.LEGS);
     public static final BaseArmor RUBY_BOOTS = new BaseArmor(new RubyArmorMaterial(), EquipmentSlot.FEET);
+
+    public static final BaseArmor COPPER_HELMET = new BaseArmor(new CopperArmorMaterial(), EquipmentSlot.HEAD);
+    public static final BaseArmor COPPER_CHESTPLATE = new BaseArmor(new CopperArmorMaterial(), EquipmentSlot.CHEST);
+    public static final BaseArmor COPPER_LEGGINGS = new BaseArmor(new CopperArmorMaterial(), EquipmentSlot.LEGS);
+    public static final BaseArmor COPPER_BOOTS = new BaseArmor(new CopperArmorMaterial(), EquipmentSlot.FEET);
 }
