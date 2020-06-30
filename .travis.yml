@@ -3,5 +3,6 @@ jdk:
   - openjdk8
   
 script:
-  - chmod +x ./gradlew assemble
+  - chmod +x ./gradlew 
+  - ./gradlew assemble
   
