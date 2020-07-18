@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X X",
+    "X X"
+  ],
+  "key": {
+    "X": {
+      "item": "moreminerals:copper_ingot"
+    }
+  },
+  "result": {
+    "item": "moreminerals:copper_leggings"
+  }
+}
