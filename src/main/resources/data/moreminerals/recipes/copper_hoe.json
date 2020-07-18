@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    " |",
+    " |"
+  ],
+  "key": {
+    "#": {
+      "item": "moreminerals:copper_ingot"
+    },
+    "|": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "moreminerals:copper_hoe"
+  }
+}

@@ -1,4 +1,4 @@
-package com.nailuj29gaming.moreminerals.moreminerals.items;
+package com.nailuj29gaming.moreminerals.moreminerals.items.tools;
 
 import com.nailuj29gaming.moreminerals.moreminerals.MoreMinerals;
 import net.minecraft.item.Item;

@@ -1,19 +1,33 @@
 {
   "item.moreminerals.ruby": "Ruby",
+  "item.moreminerals.copper_ingot": "Copper Ingot",
+  "item.moreminerals.copper_nugget": "Copper Nugget",
 
   "item.moreminerals.ruby_pickaxe": "Ruby Pickaxe",
   "item.moreminerals.ruby_sword": "Ruby Sword",
   "item.moreminerals.ruby_shovel": "Ruby Shovel",
   "item.moreminerals.ruby_axe": "Ruby Axe",
   "item.moreminerals.ruby_hoe": "Ruby Hoe",
+  "item.moreminerals.copper_pickaxe": "Copper Pickaxe",
+  "item.moreminerals.copper_sword": "Copper Sword",
+  "item.moreminerals.copper_shovel": "Copper Shovel",
+  "item.moreminerals.copper_axe": "Copper Axe",
+  "item.moreminerals.copper_hoe": "Copper Hoe",
 
   "item.moreminerals.ruby_helmet": "Ruby Helmet",
   "item.moreminerals.ruby_chestplate": "Ruby Chestplate",
   "item.moreminerals.ruby_leggings": "Ruby Leggings",
   "item.moreminerals.ruby_boots": "Ruby Boots",
 
+  "item.moreminerals.copper_helmet": "Copper Helmet",
+  "item.moreminerals.copper_chestplate": "Copper Chestplate",
+  "item.moreminerals.copper_leggings": "Copper Leggings",
+  "item.moreminerals.copper_boots": "Copper Boots",
+
   "block.moreminerals.ruby_block": "Ruby Block",
   "block.moreminerals.ruby_ore": "Ruby Ore",
+  "block.moreminerals.copper_block": "Block Of Copper",
+  "block.moreminerals.copper_ore": "Copper Ore",
 
   "itemGroup.moreminerals.itemgroup": "More Minerals"
 }

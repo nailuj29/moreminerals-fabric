@@ -31,6 +31,8 @@ public class MoreMinerals implements ModInitializer {
     public void onInitialize() {
         // Standard Items
         Registry.register(Registry.ITEM, new Identifier(MODID, "ruby"), MoreMineralsItems.RUBY);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "copper_ingot"), MoreMineralsItems.COPPER_INGOT);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "copper_nugget"), MoreMineralsItems.COPPER_NUGGET);
 
         // Blocks and corresponding BlockItems
         Registry.register(Registry.BLOCK, new Identifier(MODID, "ruby_block"), MoreMineralsBlocks.RUBY_BLOCK);
@@ -39,6 +41,12 @@ public class MoreMinerals implements ModInitializer {
         Registry.register(Registry.BLOCK, new Identifier(MODID, "ruby_ore"), MoreMineralsBlocks.RUBY_ORE);
         Registry.register(Registry.ITEM, new Identifier(MODID, "ruby_ore"), MoreMineralsItems.RUBY_ORE_ITEM);
 
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "copper_block"), MoreMineralsBlocks.COPPER_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "copper_block"), MoreMineralsItems.COPPER_BLOCK_ITEM);
+
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "copper_ore"), MoreMineralsBlocks.COPPER_ORE);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "copper_ore"), MoreMineralsItems.COPPER_ORE_ITEM);
+
         // Tools
         Registry.register(Registry.ITEM, new Identifier(MODID, "ruby_pickaxe"), MoreMineralsItems.RUBY_PICKAXE);
         Registry.register(Registry.ITEM, new Identifier(MODID, "ruby_sword"), MoreMineralsItems.RUBY_SWORD);
@@ -46,11 +54,22 @@ public class MoreMinerals implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier(MODID, "ruby_axe"), MoreMineralsItems.RUBY_AXE);
         Registry.register(Registry.ITEM, new Identifier(MODID, "ruby_hoe"), MoreMineralsItems.RUBY_HOE);
 
+        Registry.register(Registry.ITEM, new Identifier(MODID, "copper_pickaxe"), MoreMineralsItems.COPPER_PICKAXE);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "copper_sword"), MoreMineralsItems.COPPER_SWORD);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "copper_shovel"), MoreMineralsItems.COPPER_SHOVEL);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "copper_axe"), MoreMineralsItems.COPPER_AXE);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "copper_hoe"), MoreMineralsItems.COPPER_HOE);
+
         // Armor
         Registry.register(Registry.ITEM, new Identifier(MODID, "ruby_helmet"), MoreMineralsItems.RUBY_HELMET);
         Registry.register(Registry.ITEM, new Identifier(MODID, "ruby_chestplate"), MoreMineralsItems.RUBY_CHESTPLATE);
         Registry.register(Registry.ITEM, new Identifier(MODID, "ruby_leggings"), MoreMineralsItems.RUBY_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier(MODID, "ruby_boots"), MoreMineralsItems.RUBY_BOOTS);
+
+        Registry.register(Registry.ITEM, new Identifier(MODID, "copper_helmet"), MoreMineralsItems.COPPER_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "copper_chestplate"), MoreMineralsItems.COPPER_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "copper_leggings"), MoreMineralsItems.COPPER_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "copper_boots"), MoreMineralsItems.COPPER_BOOTS);
 
         // Enchants
 
@@ -86,6 +105,26 @@ public class MoreMinerals implements ModInitializer {
                             )
                     )
             ); // End Ruby Ore
+
+            biome.addFeature(
+                    GenerationStep.Feature.UNDERGROUND_ORES,
+                    Feature.ORE.configure(
+                            new OreFeatureConfig(
+                                    OreFeatureConfig.Target.NATURAL_STONE,
+                                    MoreMineralsBlocks.COPPER_ORE.getDefaultState(),
+                                    14 // Vein Size
+                            )
+                    ).createDecoratedFeature(
+                            Decorator.COUNT_RANGE.configure(
+                                    new RangeDecoratorConfig(
+                                            20, // Veins per chunk
+                                            0, // Bottom Offset
+                                            0, // Minimum Y level
+                                            63 // Maximum Y level
+                                    )
+                            )
+                    )
+            ); // End Copper Ore
         }
     }
 }
