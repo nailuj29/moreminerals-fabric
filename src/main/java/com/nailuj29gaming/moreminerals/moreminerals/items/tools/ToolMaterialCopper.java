@@ -4,7 +4,7 @@ import com.nailuj29gaming.moreminerals.moreminerals.items.MoreMineralsItems;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
-// Copper tools are in between stone and iron
+// Copper tools are in between stone and iron. They cannot be smelted into nuggets
 public class ToolMaterialCopper implements ToolMaterial {
     @Override
     public int getDurability() {
