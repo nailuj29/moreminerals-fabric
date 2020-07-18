@@ -3,5 +3,8 @@ jdk:
   - openjdk8
   
 before-script:
-  - chmod +x ./gradlew 
+  - chmod +x ./gradlew
+
+script:
+  - ./gradlew test
   
