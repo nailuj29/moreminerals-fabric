@@ -46,4 +46,9 @@ public class CopperArmorMaterial implements ArmorMaterial {
     public float getToughness() {
         return 0;
     }
+
+    @Override
+    public float getKnockbackResistance() {
+        return 0;
+    }
 }

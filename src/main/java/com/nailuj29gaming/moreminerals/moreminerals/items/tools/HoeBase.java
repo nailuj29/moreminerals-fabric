@@ -7,6 +7,6 @@ import net.minecraft.item.ToolMaterial;
 
 public class HoeBase extends HoeItem {
     public HoeBase(ToolMaterial material) {
-        super(material, -0.5f, new Item.Settings().group(MoreMinerals.MORE_MINERALS));
+        super(material, -2, -0.5f, new Item.Settings().group(MoreMinerals.MORE_MINERALS));
     }
 }

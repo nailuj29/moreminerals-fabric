@@ -12,7 +12,7 @@ public class ToolMaterialCopper implements ToolMaterial {
     }
 
     @Override
-    public float getMiningSpeed() {
+    public float getMiningSpeedMultiplier() {
         return 5.5f;
     }
 
