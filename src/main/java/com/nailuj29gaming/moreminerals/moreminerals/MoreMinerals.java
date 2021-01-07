@@ -1,18 +1,25 @@
 package com.nailuj29gaming.moreminerals.moreminerals;
 
 import com.nailuj29gaming.moreminerals.moreminerals.blocks.MoreMineralsBlocks;
+import com.nailuj29gaming.moreminerals.moreminerals.blocks.MoreMineralsOres;
 import com.nailuj29gaming.moreminerals.moreminerals.items.MoreMineralsItems;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
+import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.event.registry.RegistryEntryAddedCallback;
+import net.fabricmc.fabric.impl.biome.modification.BiomeSelectionContextImpl;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
+import net.minecraft.util.registry.RegistryKey;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.decorator.Decorator;
 import net.minecraft.world.gen.decorator.RangeDecoratorConfig;
+import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
 
@@ -72,59 +79,21 @@ public class MoreMinerals implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier(MODID, "copper_boots"), MoreMineralsItems.COPPER_BOOTS);
 
         // Enchants
+        // Ores
+        RegistryKey<ConfiguredFeature<?, ?>> oreRubyOverworld = RegistryKey.of(
+                Registry.CONFIGURED_FEATURE_WORLDGEN,
+                new Identifier(MODID, "ruby_ore_overworld"));
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreRubyOverworld.getValue(), MoreMineralsOres.RUBY_ORE_CONFIG);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreRubyOverworld);
+        RegistryKey<ConfiguredFeature<?, ?>> oreCopperOverworld = RegistryKey.of(
+                Registry.CONFIGURED_FEATURE_WORLDGEN,
+                new Identifier(MODID, "copper_ore_overworld"));
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreCopperOverworld.getValue(), MoreMineralsOres.COPPER_ORE_CONFIG);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreCopperOverworld);
 
 
         /***** END REGISTRATIONS *****/
-
-        // Add ores to existing biomes
-        Registry.BIOME.forEach(this::handleBiome);
-
-        // Listen for other biomes being registered, and add ores
-        RegistryEntryAddedCallback.event(Registry.BIOME).register((i, identifier, biome) -> handleBiome(biome));
     }
 
-    private void handleBiome(Biome biome) {
-        if (biome.getCategory() != Biome.Category.NETHER && biome.getCategory() != Biome.Category.THEEND) {
-            // Ruby Ore (Any biome, veins of up to 5, 3 attempts per chunk, 0 - 15)
-            biome.addFeature(
-                    GenerationStep.Feature.UNDERGROUND_ORES,
-                    Feature.ORE.configure(
-                            new OreFeatureConfig(
-                                    OreFeatureConfig.Target.NATURAL_STONE,
-                                    MoreMineralsBlocks.RUBY_ORE.getDefaultState(),
-                                    5 // Vein Size
-                            )
-                    ).createDecoratedFeature(
-                            Decorator.COUNT_RANGE.configure(
-                                    new RangeDecoratorConfig(
-                                            3, // Veins per chunk
-                                            0, // Bottom Offset
-                                            0, // Minimum Y level
-                                            15 // Maximum Y level
-                                    )
-                            )
-                    )
-            ); // End Ruby Ore
 
-            biome.addFeature(
-                    GenerationStep.Feature.UNDERGROUND_ORES,
-                    Feature.ORE.configure(
-                            new OreFeatureConfig(
-                                    OreFeatureConfig.Target.NATURAL_STONE,
-                                    MoreMineralsBlocks.COPPER_ORE.getDefaultState(),
-                                    14 // Vein Size
-                            )
-                    ).createDecoratedFeature(
-                            Decorator.COUNT_RANGE.configure(
-                                    new RangeDecoratorConfig(
-                                            20, // Veins per chunk
-                                            0, // Bottom Offset
-                                            0, // Minimum Y level
-                                            63 // Maximum Y level
-                                    )
-                            )
-                    )
-            ); // End Copper Ore
-        }
-    }
 }
